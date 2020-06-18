@@ -73,11 +73,11 @@ function runInq(){
     `6. [Questions](#questions)\n\n` +
     `### Installation: <a name="installation"></a>\n ${answers.installation}\n` +
     `### Usage: <a name="usage"></a>\n ${answers.usage}\n` +
-    `### License: <a name="license"></a>\n This application is covered under the ${answers.license} license.\n` +
+    `### License: <a name="license"></a>\n This application is covered under the "${answers.license}" license.\n` +
     `### Contributing members: <a name="contributing"></a>\n ${answers.contributing}\n` +
     `### Tests: <a name="tests"></a>\n ${answers.tests}\n` +
     `### Questions: <a name="questions"></a>\n` +
-    `If you have any questions or concerns, my github is ${answers.questionsUsername}. Or, you can email me at ${answers.questionsEmail}.`
+    `If you have any questions or concerns, my github is [${answers.questionsUsername}](https://github.com/${answers.questionsUsername}). Or, you can email me at ${answers.questionsEmail}.`
 
     fs.writeFile('README.md', data, 'utf-8', (err) =>
 	{

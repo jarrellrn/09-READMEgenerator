@@ -1,4 +1,4 @@
-[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
+[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
 # Dynamic README generator
 
 ## Description
@@ -16,10 +16,10 @@
 ### Usage: <a name="usage"></a>
  Once dependencies have been installed, run 'node index.js' in the main directory to run the program.
 ### License: <a name="license"></a>
- This application is covered under the Mozilla Public License 2.0 license.
+ This application is covered under the "ISC" license.
 ### Contributing members: <a name="contributing"></a>
  Robert Jarrell
 ### Tests: <a name="tests"></a>
  N/A
 ### Questions: <a name="questions"></a>
-If you have any questions or concerns, my github is jarrellrn. Or, you can email me at jarrellrn@gmail.com.
+If you have any questions or concerns, my github is [jarrellrn](https://github.com/jarrellrn). Or, you can email me at jarrellrn@gmail.com.
