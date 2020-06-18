@@ -3,6 +3,8 @@
 
 ## Description
  This application dynamically creates a readme based on user input and formats it for easy reading via markdown.
+## Video demonstration
+ [Here is a video demoing the application](https://youtu.be/lAirv3jDUKs)
 ## Table of contents
 1. [Installation](#installation)
 2. [Usage](#usage)
