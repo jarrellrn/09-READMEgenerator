@@ -1,7 +1,8 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
 
-inquirer
+function runInq(){
+    inquirer
   .prompt([
     {
       name: 'title',
@@ -44,5 +45,19 @@ inquirer
     },
   ])
   .then(function(answers){
-    console.log(answers);
+
+    var data = `# ${answers.title}`
+
+
+
+    fs.writeFile('README.md', data, 'utf-8', (err) =>
+	{
+        if (err) throw err;
+        else {
+            return console.log("Complete!")
+        }
+	});
   });
+}
+
+runInq();
