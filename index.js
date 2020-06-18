@@ -79,11 +79,11 @@ function runInq(){
     `### Questions: <a name="questions"></a>\n` +
     `If you have any questions or concerns, my github is [${answers.questionsUsername}](https://github.com/${answers.questionsUsername}). Or, you can email me at ${answers.questionsEmail}.`
 
-    fs.writeFile('README.md', data, 'utf-8', (err) =>
+    fs.writeFile('newREADME.md', data, 'utf-8', (err) =>
 	{
         if (err) throw err;
         else {
-            return console.log("Complete! Check README.md for your new readme.")
+            return console.log("Complete! Check newREADME.md for your new readme.")
         }
 	});
   });
