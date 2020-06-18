@@ -1,0 +1,22 @@
+{
+  "name": "09-readmegenerator",
+  "version": "1.0.0",
+  "description": "application for generating a readme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jarrellrn/09-READMEgenerator.git"
+  },
+  "author": "jarrellrn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jarrellrn/09-READMEgenerator/issues"
+  },
+  "homepage": "https://github.com/jarrellrn/09-READMEgenerator#readme",
+  "dependencies": {
+    "inquirer": "^7.2.0"
+  }
+}
