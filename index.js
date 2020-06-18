@@ -46,8 +46,22 @@ function runInq(){
   ])
   .then(function(answers){
 
+    var licenseBadge = "";
+    if (answers.license === "ISC"){
+        licenseBadge = "[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)"
+    }
+    if (answers.license === "Apache License 2.0"){
+        licenseBadge = "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
+    }
+    if (answers.license === "MIT License"){
+        licenseBadge = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
+    }
+    if (answers.license === "Mozilla Public License 2.0"){
+        licenseBadge = "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)"
+    }
+
     var data =
-    `[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)`
+    `${licenseBadge}\n`+
     `# ${answers.title}\n\n` +
     `## Description\n ${answers.description}\n` +
     `## Table of contents\n` +
@@ -64,9 +78,6 @@ function runInq(){
     `### Tests: <a name="tests"></a>\n ${answers.tests}\n` +
     `### Questions: <a name="questions"></a>\n` +
     `If you have any questions or concerns, my github is ${answers.questionsUsername}. Or, you can email me at ${answers.questionsEmail}.`
-
-
-
 
     fs.writeFile('README.md', data, 'utf-8', (err) =>
 	{
