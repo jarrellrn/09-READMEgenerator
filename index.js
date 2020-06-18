@@ -46,7 +46,8 @@ function runInq(){
   ])
   .then(function(answers){
 
-    var data = `# ${answers.title}`
+    var data = `# ${answers.title}\n\n`
+    + `## Description\n ${answers.description}`
 
 
 
